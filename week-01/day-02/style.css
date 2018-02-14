@@ -1,0 +1,54 @@
+img{
+    margin:  auto;
+    background-color: #333333;
+    margin-left: 10%;
+}
+
+.menu {
+    background-color: #333333;
+    padding-right: 10%;
+    justify-content: right;
+    display: flex;
+	text-align: right;
+	font-size: 15px;
+
+}
+
+body {
+    background-image: url("img/background.png");
+    margin: 0;
+    font-family: consolas, courier;
+}
+
+.text {
+    padding: 10%;
+
+}
+
+.wiki {
+    padding: 10%;
+}
+
+a{
+    padding-left : 20px;
+    color:#ff0099;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    color: #ff0099;
+}
+
+h4{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pont{
+    text-align: center;
+}
