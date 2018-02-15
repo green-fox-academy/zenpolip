@@ -10,5 +10,12 @@ let cubex: number = 10.1;
 let cubey: number = 20.3;
 let cubez: number = 30.4;
 
-console.log(`Surface Area: ${ 2*(cubex*cubey) + 2*(cubex*cubez) + 2*(cubey*cubez) }`);
-console.log(`Volume: ${cubex*cubey*cubez}`);
+let surface: number = 2*(cubex*cubey) + 2*(cubex*cubez) + 2*(cubey*cubez);
+let volume: number = cubex*cubey*cubez;
+
+console.log("Surface Number: " +surface);
+console.log("Volume: " +volume);
+
+
+//console.log(`Surface Area: ${ 2*(cubex*cubey) + 2*(cubex*cubez) + 2*(cubey*cubez) }`);
+//console.log(`Volume: ${cubex*cubey*cubez}`);
