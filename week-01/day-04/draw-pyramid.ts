@@ -12,15 +12,18 @@ let lineCount: number = 4;
 //
 // The pyramid should have as many lines as lineCount is
 
-let s: string = ' '; 
-let a: string = '*'; 
+let space: string = ' '; 
+let asterix: string = '*'; 
 
 
-for(let i:number =0; i < lineCount; i ++){
-    s = ' ';
-    for(let j: number=1; j <= (lineCount - i); j++){
-        s = s + ' ';
+for(let i:number =1; i <= lineCount; i ++){
+     // for(let j: number=0; j <= (lineCount - i-2); j++){
+        for(let j: number = (lineCount - i); j > 0; j--){
+
+        space = space + ' ';
+        
     }
-    console.log(s + a);
-    a = '*' + a + '*';
+    console.log(space + asterix);
+    space = ' ';
+    asterix += '**';
 }
