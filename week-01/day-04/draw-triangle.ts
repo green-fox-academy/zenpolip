@@ -12,9 +12,8 @@ let lineCount: number = 4;
 // The triangle should have as many lines as lineCount is
 
 //for (let i: number = 0; i <
-let a: string = '*'; 
+let asterix: string = '*'; 
 for(lineCount; lineCount > 0; lineCount--){
-    console.log(a);
-    a= a + '*';
-    a
+    console.log(asterix);
+    asterix += '*';
 }
