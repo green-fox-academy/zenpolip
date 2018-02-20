@@ -8,9 +8,9 @@ let matchedList: string[] = [];
 
 function makingMatches(listA: string[], listB :string[]):string[] {
   for(let i: number= 0; i < listA.length; i ++){
-  matchedList.push(listA[i]);
-  matchedList.push(listB[i]);
-  }
+    matchedList.push(listA[i]);
+    matchedList.push(listB[i]);
+    }
   return matchedList;
 }
 console.log(makingMatches(girls, boys));
