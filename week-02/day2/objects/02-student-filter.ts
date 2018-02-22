@@ -14,14 +14,14 @@ let students: any[] = [
 //  - how many candies they have on average
 
 function studentCandies(studentList: string[]) {
-  console.log("Who has got more candies than 4:")
+  console.log('\nWho has got more candies than four:')
   let filteredStudents: any[] = students.filter(function(studentList) {
     return studentList.candies > 4;
     });
 
   // console.log(currentStudent[0].name + ': ' + currentStudent[0].candies)
   filteredStudents.forEach(function(studentList) {
-    console.log(studentList.name + ': ' + studentList.candies)
+    console.log(studentList.name + ' has ' + studentList.candies + ' candies') 
     })
 }
 
@@ -29,14 +29,14 @@ studentCandies(students);
 
 
 function candieAverage(studentsList: string[]){
-  console.log("How many candies they have on average:");
+  
   let sumOfCandies: number = 0;
   let averageOfCandies: number = 0;
   for(let i: number= 0; i < students.length; i++){
     sumOfCandies += students[i].candies;
   }
   averageOfCandies = sumOfCandies / students.length
-  console.log("How many candies they have on average:" + averageOfCandies);
+  console.log('\nHow many candies they have on average: \n' + averageOfCandies);
 }
 
 candieAverage(students);
