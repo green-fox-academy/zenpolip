@@ -3,6 +3,8 @@
 
 *Green Fox Macrotis Ace team*
 
+- [My repo](https://github.com/zenpolip)
+
 ## Week 01 (12 - 16 February)
 
 - Monday: Team building
