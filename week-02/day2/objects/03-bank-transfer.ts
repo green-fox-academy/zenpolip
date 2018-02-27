@@ -32,12 +32,11 @@ let accounts: any[] = [
 // let accountList: string[] = []; 
 
 function accountBalance(accNum: number): any[]{
-
   let accountList: any[] = []; 
   //accNum.forEach(function(item: string, index: any){
   for(let i: number= 0; i < accounts.length; i++){
     if(accNum === accounts[i].account_number){
-    accountList.push(accounts[i].client_name, accounts[i].balance);
+      accountList.push(accounts[i].client_name, accounts[i].balance);
     }
   }
 return accountList;
