@@ -14,7 +14,17 @@
 
 
 ## Week 02 (19 - 23 February)
+
 - Monday: [Arrays and functions](https://github.com/greenfox-academy/zenpolip/tree/master/week-02/day1)
 - Tuesday: [Data structures and practice](https://github.com/greenfox-academy/zenpolip/tree/master/week-02/day2)
 - Wednesday, Thursday: [Drawing](https://github.com/greenfox-academy/zenpolip/tree/master/week-02/day3)
 - Friday: [Project](https://github.com/greenfox-academy/zenpolip/tree/master/week-02/day5)
+
+
+## Week 03 (26 Feb - 2 March)
+
+- Monday: Presentation Techniques 
+- Tuesday: [File manipulation](https://github.com/greenfox-academy/zenpolip/tree/master/week-03/day2/file-manipulations)
+- Wednesday: [Classes and objects](https://github.com/greenfox-academy/zenpolip/tree/master/week-03/day3/oop)
+- Thursday: [Recursion](https://github.com/greenfox-academy/zenpolip/tree/master/week-03/day4/)
+- Friday: [Drawing fractals with recursive functions](https://github.com/greenfox-academy/zenpolip/tree/master/week-03/day-05)
