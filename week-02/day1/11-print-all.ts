@@ -3,7 +3,7 @@
 // *hint: use a loop, console.log(numList) won't cut it
 // -  bonus for using the correct built in array method
 
-let numList: number[]= [4, 5, 6, 7];
-numList.forEach(function(element: number){
+let numList: number[] = [4, 5, 6, 7];
+numList.forEach(function (element: number) {
   console.log(element);
-})
+});
