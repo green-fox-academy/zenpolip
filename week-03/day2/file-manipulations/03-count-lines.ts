@@ -6,8 +6,8 @@
 
 const fs = require('fs');
 
-function countLines(filePath){
-  let fileBuffer =  fs.readFileSync(filePath);
+function countLines(filePath) {
+  let fileBuffer = fs.readFileSync(filePath);
   let to_string = fileBuffer.toString();
   let split_lines = to_string.split("\n");
   console.log(split_lines.length);
