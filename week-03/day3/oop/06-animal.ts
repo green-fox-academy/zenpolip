@@ -24,11 +24,11 @@ class Animal {
   }
 }
 
-let kacsa = new Animal('Kacsa');
-console.log(kacsa);
-kacsa.eat();
-console.log(kacsa);
-kacsa.drink();
-console.log(kacsa);
-kacsa.play();
-console.log(kacsa);
+let duck = new Animal('Duck');
+console.log(duck);
+duck.eat();
+console.log(duck);
+duck.drink();
+console.log(duck);
+duck.play();
+console.log(duck);
