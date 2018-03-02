@@ -13,40 +13,38 @@ class Pirate {
   drunkIndex: number = 0;
   isAlive: boolean = true;
 
-  drinkSomeRum(shotOfRum: number){
+  drinkSomeRum(shotOfRum: number) {
     this.drunkIndex += shotOfRum;
     console.log(shotOfRum + ' rum is down...')
   }
-
-  passOut(){
+  passOut() {
     this.drunkIndex = 0;
   }
-  howsItGoingMate(){
-    if(!this.isAlive){
+  howsItGoingMate() {
+    if (!this.isAlive) {
       console.log('he\`s dead');
     }
-    else if(this.drunkIndex <= 4){
+    else if (this.drunkIndex <= 4) {
       console.log('Pirate: Pour me anudder!');
     }
-    else{
+    else {
       console.log('Pirate: Arghh, I\'ma Pirate. How dya d\'ink its goin?');
       this.passOut();
       console.log(' - pirate passed out ....zz.ZZ.zz.ZZ');
-    
     }
   }
-  die(){
+  die() {
     this.isAlive = false;
   }
-  brawl(opponent: Pirate){
+  brawl(opponent: Pirate) {
     let brawlResult: number = Math.floor(Math.random() * Math.floor(3));
-    if (brawlResult === 0){
+    if (brawlResult === 0) {
       this.die();
     }
-    else if( brawlResult === 1){
+    else if (brawlResult === 1) {
       opponent.die();
     }
-    else{
+    else {
       this.passOut();
       opponent.passOut();
     }
