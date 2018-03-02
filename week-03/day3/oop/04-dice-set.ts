@@ -1,3 +1,5 @@
+'use strict';
+
 class DiceSet {
   /**   You have a Dice class which has 6 dice */
   /**   You can roll all of them with roll() */
