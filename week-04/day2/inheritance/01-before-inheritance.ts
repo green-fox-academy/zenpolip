@@ -55,14 +55,14 @@ class Student {
   getGoal() {
     console.log('My goal is: Be a junior software developer.');
   }
-
+ 
   skipDays(numberOfDay: number) {
     this.skippedDays += numberOfDay;
   }
 }
 
 class Mentor {
-
+ 
   name: string = 'Jane Doe';
   age: number = 30;
   gender: string = 'female';
@@ -76,14 +76,14 @@ class Mentor {
       this.age = age;
     }
     if (gender !== undefined) {
-      this.gender = gender;
+    this.gender = gender;
     }
     if (level !== undefined) {
       this.level = level;
     }
   }
 
-  introduce() {
+  introduce () {
     console.log(`Hi, i'm ${this.name}, a ${this.age} year old ${this.gender} ${this.level} mentor.`);
   }
   getGoal() {
@@ -92,7 +92,7 @@ class Mentor {
 }
 
 class Sponsor {
-
+ 
   name: string = 'Jane Doe';
   age: number = 30;
   gender: string = 'female';
@@ -107,14 +107,14 @@ class Sponsor {
       this.age = age;
     }
     if (gender !== undefined) {
-      this.gender = gender;
+    this.gender = gender;
     }
     if (company !== undefined) {
       this.company = company;
     }
   }
 
-  introduce() {
+  introduce () {
     console.log(`Hi, i'm ${this.name}, a ${this.age} year old ${this.gender} who represents ${this.company} and hired ${this.hiredStudents} students so far.`);
   }
 
@@ -123,39 +123,39 @@ class Sponsor {
   }
 
   hire() {
-    this.hiredStudents++;
+    this.hiredStudents ++;
   }
 }
 
 let people = [];
-let mark = new Person('Mark', 46, 'male');
-people.push(mark);
-let jane = new Person();
-people.push(jane);
-let john = new Student('John Doe', 20, 'male', 'BME');
-people.push(john);
-let student = new Student();
-people.push(student);
-let gandhi = new Mentor('Gandhi', 148, 'male', 'senior');
-people.push(gandhi);
-let mentor = new Mentor();
-people.push(mentor);
-let sponsor = new Sponsor();
-people.push(sponsor);
-let elon = new Sponsor('Elon Musk', 46, 'male', 'SpaceX');
-people.push(elon);
-
-student.skipDays(3);
-
-for (let i = 0; i < 6; i++) {
-  elon.hire();
-}
-
-for (let i = 0; i < 4; i++) {
-  sponsor.hire();
-}
-
-for (let person of people) {
-  person.introduce();
-  person.getGoal();
-}
+ let mark = new Person('Mark', 46, 'male');
+ people.push(mark);
+ let jane = new Person();
+ people.push(jane);
+ let john = new Student('John Doe', 20, 'male', 'BME');
+ people.push(john);
+ let student = new Student();
+ people.push(student);
+ let gandhi = new Mentor('Gandhi', 148, 'male', 'senior');
+ people.push(gandhi);
+ let mentor = new Mentor();
+ people.push(mentor);
+ let sponsor = new Sponsor();
+ people.push(sponsor);
+ let elon = new Sponsor('Elon Musk', 46, 'male', 'SpaceX');
+ people.push(elon);
+ 
+ student.skipDays(3);
+ 
+ for (let i = 0; i < 6; i++) {
+   elon.hire();
+ }
+ 
+ for (let i = 0; i < 4; i++) {
+   sponsor.hire();
+ }
+ 
+ for (let person of people) {
+   person.introduce();
+   person.getGoal();
+ }
