@@ -4,19 +4,29 @@ class Garden {
 
   plants: Plant[] = [];
 
+  name: string
+  consturctor(name: string) {
+    this.name = name;
+  }
+
   newPlant(plant: Plant) {
     this.plants.push(plant);
   }
 
   gardenStatus(): string {
     let gardenStatusLog: string = '';
-    this.plants.forEach(function(element){
-      gardenStatusLog += `The ${element.name} ${element.type} ${element.doesItNeedWater() ? 'needs' : 'doesn\`t need'} water \n\r`
+    this.plants.forEach(element => {
+      gardenStatusLog += `The ${element.name} ${element.type} ${element.doesItNeedWater() ? 'needs' : 'doesn\`t need'} water. \n\r`
     });
     return gardenStatusLog;
   }
 
-
+  waterMyGarden(amount: number): string {
+    this.plants.forEach(element => {
+      element.pourWater(amount / this.plants.length);
+    });
+    return `Watered plants with ${amount}.`
+  }
 }
 
 class Plant {
@@ -28,8 +38,8 @@ class Plant {
     this.name = name;
   }
 
-  doesItNeedWater() {};
-  pourWater(amount: number) {};
+  doesItNeedWater() { };
+  pourWater(amount: number) { };
 }
 
 
@@ -78,3 +88,8 @@ myGarden.newPlant(treePurple);
 
 
 console.log(myGarden.gardenStatus());
+console.log(myGarden.waterMyGarden(40));
+console.log(myGarden.gardenStatus());
+console.log(myGarden.waterMyGarden(70));
+console.log(myGarden.gardenStatus());
+
