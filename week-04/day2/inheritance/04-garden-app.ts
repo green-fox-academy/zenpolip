@@ -92,4 +92,3 @@ console.log(myGarden.waterMyGarden(40));
 console.log(myGarden.gardenStatus());
 console.log(myGarden.waterMyGarden(70));
 console.log(myGarden.gardenStatus());
-
