@@ -28,3 +28,11 @@
 - Wednesday: [Classes and objects](https://github.com/greenfox-academy/zenpolip/tree/master/week-03/day3/oop)
 - Thursday: [Recursion](https://github.com/greenfox-academy/zenpolip/tree/master/week-03/day4/)
 - Friday: [Drawing fractals with recursive functions](https://github.com/greenfox-academy/zenpolip/tree/master/week-03/day-05)
+
+## Week 04 (5 - 9 March)
+
+- Monday: Training / Trial Exam 
+- Tuesday: [Inheritance](https://github.com/greenfox-academy/zenpolip/tree/master/week-04/day2/)
+- Wednesday: [Abstracts and Interfaces](https://github.com/greenfox-academy/zenpolip/tree/master/week-04/day3/)
+- Thursday: [OO + Testing](https://github.com/greenfox-academy/zenpolip/tree/master/week-04/day4/)
+- Friday: [Todo App](https://github.com/zenpolip/todo-app)
