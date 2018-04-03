@@ -2,6 +2,10 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = 3000;
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
@@ -43,11 +47,39 @@ app.get('/greeter', (req, res) => {
 });
 
 app.get('/appenda/:appendable', (req, res) => {
+  res.json({
+    appended: req.params.appendable + 'a'
+  });
+}
+);
+
+app.post('/dountil/:what', (req, res) => {
+  let number = req.body.until;
+  const what = req.params.what;
+  if (req.body.until === undefined) {
     res.json({
-        appended: req.params.appendable + 'a'
+      error: 'Please provide a number!'
     });
   }
-);
+  else if (what === 'sum') {
+    let sum = 0;
+    for (let i = 0; i <= number; i++) {
+      sum += i;
+    }
+    res.json({
+      "result": sum,
+    })
+  }
+  else if (what === 'factor') {
+    let factor = 1;
+    for (let i = 1; i <= number; i++) {
+      factor = factor * i;
+    }
+    res.json({
+      "result": factor,
+    })
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`Server is up on port ${PORT}`);
