@@ -1,7 +1,7 @@
 /**
  * Created by aze on 2017.05.09..
  */
-window.baseUrl = "http://localhost:8080";
+window.baseUrl = "http://localhost:3000";
 $("#server_change").on("submit", function (e) {
     e.preventDefault();
     window.baseUrl = $("#server_address").val();
