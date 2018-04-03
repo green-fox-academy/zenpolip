@@ -15,7 +15,8 @@ app.get('/doubling', (req, res) => {
     res.json({
       "error": "Please provide an input!"
     })
-  } else {
+  }
+  else {
     res.json({
       "received": req.query.input,
       "result": req.query.input * 2,
@@ -24,8 +25,23 @@ app.get('/doubling', (req, res) => {
 });
 
 app.get('/greeter', (req, res) => {
-
+  if (req.query.name === undefined) {
+    res.json({
+      "error": "Please provide a name!"
+    })
+  }
+  else if (req.query.title === undefined) {
+    res.json({
+      "error": "Please provide a title!"
+    })
+  }
+  else {
+    res.json({
+      "welcome_message": `Oh, hi there ${req.query.name}, my dear ${req.query.title}!`
+    });
+  }
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server is up on port ${PORT}`);
