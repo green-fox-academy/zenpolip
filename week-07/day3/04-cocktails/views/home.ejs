@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Coctail Menu</title>
+  <link rel="stylesheet" type="text/css" href="./static/style.css">
+</head>
+
+<body>
+  <h1>Coctails</h1>
+  <div class="selector">
+    <a href="/">ALL</a>
+    <% for (let i = 0; i < alcohols.length; i++) { %>
+      <a href="/?alcohol=<%= alcohols[i] %>">
+        <%= alcohols[i] %>
+      </a>
+      <% } %>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>PRICE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (let i = 0; i < cocktails.length; i++) { %>
+        <tr>
+          <td>
+            <div>
+              <%= cocktails[i].name %>
+                <% if (!cocktails[i].isAlcoholic) { %>
+                  (non alcoholic)
+                  <% } %>
+            </div>
+            <div>
+              <%= cocktails[i].contains.join(', ') %>
+            </div>
+          </td>
+          <td>
+            <%= cocktails[i].price %>
+          </td>
+        </tr>
+        <% } %>
+    </tbody>
+  </table>
+</body>
+
+</html>
