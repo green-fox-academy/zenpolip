@@ -5,7 +5,7 @@ xhr.open('GET', 'http://api.giphy.com/v1/gifs/search?q=ozora&api_key=1Hg0JBFrjat
 xhr.onload = function () {
   if (xhr.readyState === XMLHttpRequest.DONE) {
     let content = JSON.parse(xhr.responseText).data;
-    content.forEach(function (item) {
+    content.forEach(item => {
       displayGiphies(item);
     });
   console.log(content);
