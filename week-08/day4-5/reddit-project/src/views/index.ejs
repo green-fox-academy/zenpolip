@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Reddit Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css" type="text/css">
+</head>
+<body>
+  <header>
+    <h1>UNDERWATER</h1>
+    <p>posts</p>
+  </header>
+  <main>
+    <section>
+      <% posts.forEach(e => { %>
+        <div class="vote">
+          <button id="<%= e.id %>" class="arrow up"></button>
+            <div data-id="<%= e.score %>" class="score ">
+              <%= e.score %>
+            </div>
+          <button id="<%= e.id %>" class="arrow down"></button>
+        </div>
+        <div class="content">
+          <h2>
+            <%= e.title %>
+              <a href="<%= e.url %>" class="posturl">
+                <%= e.url %>
+              </a>
+          </h2>
+          <p class="tagline">
+            <%= `submitted at ${e.timestamp.toString().slice(0, 24)} by ` %>
+              <span class="owner">
+                <%= e.owner %>
+              </span>
+          </p>
+          <ul>
+            <li id="modify">Modify</li>
+            <li id="remove">Remove</li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      <%}); %>
+    </section>
+    <aside>
+      <button class="submit">
+        <a href="" target="_blank">SUBMIT A NEW POST</a>
+      </button>
+      <div id="about">
+        <h2>ABOUT
+          <a href="localhost:3000/">r/underwater</a>
+        </h2>
+        <p>Share and discuss informative content on:</p>
+        <ul>
+          <li>Mystical marine life</li>
+          <li>Sea creatures</li>
+          <li>Close encounters underwater</li>
+          <li>Unidentified swimming objects</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+  <script src="/static/script.js"></script>
+</body>
+</html>
